@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Captura de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333333;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555555;
+        }
+        .view-db-button {
+            background-color: #007bff;
+        }
+        .view-db-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Captura de Datos</h1>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required>
+
+            <label for="asignatura">Asignatura:</label>
+            <input type="text" id="asignatura" name="asignatura" required>
+
+            <label for="profesor">Profesor:</label>
+            <input type="text" id="profesor" name="profesor" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
